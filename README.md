@@ -41,22 +41,21 @@ Type 2 Diabetes is a major health issue globally. Early prediction based on medi
 - K-Nearest Neighbors (KNN)
 - Decision Tree Classifier
 - Random Forest Classifier
-- Support Vector Machine (SVM)
-- XGBoost Classifier
+
 
 ---
 
 ## 📈 Evaluation Metrics
 
 - Accuracy Score
-- Classification Report (Precision, Recall, F1-score)
+  
 - Confusion Matrix
 
-| Model                | Accuracy |
+| Model               | Accuracy |
 |---------------------|----------|
-| Logistic Regression | ~78%     |
-| Random Forest       | ~81%     |
-| XGBoost             | ~84%     |
+| Logistic Regression | ~91.6%   |
+| Random Forest       | ~91.2%   |
+| Decision Tree       | ~85.14%  |
 
 ---
 
@@ -64,7 +63,7 @@ Type 2 Diabetes is a major health issue globally. Early prediction based on medi
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/framingham-diabetes-classification.git
+   git clone https://github.com/adityagupttta/framingham-diabetes-classification.git
    ```
 2. Install dependencies:
    ```bash
@@ -72,7 +71,7 @@ Type 2 Diabetes is a major health issue globally. Early prediction based on medi
    ```
 3. Launch Jupyter Notebook and open:
    ```bash
-   jupyter notebook Glucose_Prediction_Summary.ipynb
+   jupyter notebook Daibetes_Prediction_Summary.ipynb
    ```
 
 ---
@@ -89,8 +88,6 @@ Type 2 Diabetes is a major health issue globally. Early prediction based on medi
 ## 🚀 Future Improvements
 
 - Hyperparameter tuning with GridSearchCV
-- Ensemble stacking
-- SHAP/LIME for model interpretability
 - Deployment with Streamlit or Flask
 
 ---
@@ -104,11 +101,9 @@ framingham-diabetes-classification/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   └── diabetes.csv
+│   └── framingham.csv
 ├── images/
 │   └── plots.png
-└── models/
-    └── saved_model.pkl
 ```
 
 ---
